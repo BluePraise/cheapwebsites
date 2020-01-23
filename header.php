@@ -44,7 +44,7 @@
 	<div class="wrapper">
 
 		<!-- header -->
-		<header id="header" class="header header--fixed">
+		<header class="header header--fixed">
 			<div class="wr">
 				<div class="page-title">
 					<a href="<?php echo home_url(); ?>" class="header__logo">Cheap Websites</a>

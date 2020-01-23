@@ -80,6 +80,35 @@ body {
 
 }
 
+/*************************
+*
+* LAYOUT
+*
+*************************/
+
+.wrapper {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.ft {
+    position: relative;
+    display: flex;
+    text-align: left;
+    min-height: 500px;
+    margin: auto;
+}
+
+.ft__half {
+  width: 50%;
+  align-self: center;
+}
+
+svg, img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .btn {
   display: inline-flex;
@@ -184,12 +213,12 @@ body {
   min-height: 0px;
 }
 .section__title {
-  margin: 0 0 5px;
+  /* margin: 0 0 5px; */
   text-align: center;
   font-weight: 700;
   font-size: 2.7em;
-  font-size: calc(2.7em * var(--title-scale));
-  line-height: 1.3em;
+  /* font-size: calc(2.7em * var(--title-scale)); */
+  /* line-height: 1.3em; */
 }
 .section__title.standalone {
   margin-bottom: 50px;
@@ -368,9 +397,9 @@ body {
   }
 }
 .pdx {
-  display: flex;
-  align-items: center;
-  box-sizing: border-box;
+  /* display: flex; */
+  /* align-items: center; */
+  /* box-sizing: border-box; */
 }
 
 .pdxItem {
@@ -466,10 +495,7 @@ body {
     font-size: 18pt;
   }
 }
-.section--hero {
-  background-position: 50%;
-  background-size: cover;
-}
+
 
 .hero__title {
   font-weight: 700;
@@ -579,82 +605,7 @@ body {
   margin-right: 8px;
 }
 
-.section--features {
-  background-color: rgba(72, 72, 240, 1);
-  padding-bottom: 60px;
-  padding-top: 60px;
-  min-height: 0px;
-}
-.section--feature {
-  background-color: rgba(255, 255, 255, 1);
-  min-height: 500px;
-}
-.features {
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  justify-content: space-between;
-}
-.feature {
-  margin: 0 25px;
-  box-sizing: border-box;
-  width: 33.33%;
-}
-.features--center .feature {
-  text-align: center;
-}
-.feature:first-child {
-  margin-left: 0;
-}
-.feature:last-child {
-  margin-right: 0;
-}
-.feature__title {
-  margin: 0 0 8px;
-  font-weight: 400;
-  font-size: 1.3em;
-}
-.feature__description {
-  overflow: auto;
-  margin: 3px 0 0;
-  font-size: 1.1em;
-  line-height: 1.6em;
-}
-.feature__description p {
-  margin: 0;
-}
 
-@media only screen and (max-width: 760px) {
-  .features {
-    flex-direction: column;
-  }
-  .feature {
-    width: 100%;
-    margin: 0 0 50px;
-  }
-  .feature:last-child {
-    margin-bottom: 0;
-  }
-  .features:not(.features--center) .feature .icon {
-    float: left;
-    margin-right: 30px;
-  }
-  .feature__title {
-    margin-bottom: 4px;
-  }
-}
-@media only screen and (max-width: 450px) {
-  .feature {
-    text-align: center;
-  }
-  .features .icon {
-    float: none !important;
-    margin: 0 auto 15px !important;
-  }
-  .features .iconWrapper .icon {
-    margin-bottom: 0 !important;
-  }
-}
 .section--zigzag {
   background-color: #fff;
   padding-bottom: 60px;
@@ -991,30 +942,12 @@ body {
   }
 }
 
-.ft {
-  position: relative;
-  display: flex;
-  width: 100vw;
-  text-align: left;
-  min-height: 500px;
-}
 
-.section--hero .ft {
-  min-height: 700px;
-}
 .ft .section__subtitle,
 .ft .section__title {
   text-align: left;
 }
 
-.ft__half {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 50px 0;
-  box-sizing: border-box;
-}
 .ft--left .ft__half,
 .ft--right .ft__half {
   padding-bottom: calc(50px + var(--pdx-pb) * var(--pdx-pm) * 1px);
@@ -1026,37 +959,8 @@ body {
   padding-top: calc(50px + var(--pdx-pt) * var(--pdx-pm) * 1px);
 }
 
-.ft--isFirst .ft__half:first-child {
-  padding-top: calc(95px + var(--pdx-pt) * var(--pdx-pm) * 1px);
-}
-.ft--twoBg.ft--left .ft__half:not(.pdx) {
-  padding-left: 0;
-}
-
-.ft__half .ft__wrapper {
-  z-index: 4;
-  max-width: 570px;
-}
 .ft__half .pdxItem {
   z-index: 3;
-}
-
-.ft--twoBg .ft__half,
-.ft__half.pdx {
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.ft__half:first-child .ft__wrapper {
-  margin-left: 30px;
-}
-
-.ft__half:last-child {
-  justify-content: flex-start;
-}
-.ft__content,
-.ft__media {
-  display: flex;
-  flex-direction: column;
 }
 
 .ftPoint {
@@ -1137,9 +1041,6 @@ body {
   }
 }
 
-.header--fixed + .section {
-  padding-top: 50px;
-}
 
 /* clear */
 .clear:before,
@@ -1392,7 +1293,8 @@ a img.aligncenter {
   font-weight: 300;
 }
 .font-title {
-  font-family: "Roboto", Arial, serif;
+  /* font-family: "Roboto", Arial, serif; */
+  /* font-family: 'kollektifbold_italic'; */
 }
 .link,
 a {
