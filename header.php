@@ -46,7 +46,10 @@
 		<!-- header -->
 		<header id="header" class="header header--fixed">
 			<div class="wr">
-				<a href="<?php echo home_url(); ?>" class="header__logo">Cheap Websites</a>
+				<div class="page-title">
+					<a href="<?php echo home_url(); ?>" class="header__logo">Cheap Websites</a>
+					<div class="subheader">WEBSITES VOOR STARTERS</div>
+				</div>
 				<nav id="headerNav" class="header__nav">
 					<div class="headerNav__links"></div>
 					<div class="header__navCtas"></div>

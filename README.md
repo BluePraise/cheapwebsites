@@ -7,14 +7,6 @@ Powerful shell for rapidly deploying your WordPress projects.
 -   Author : [Magalie Chetrit](https://magalielinda.me)
 
 
-## Getting Started with HTML5 Blank
-
-Download the latest version from [cheapweb.com](http://cheapweb.com)
-
-## Get involved! Make HTML5 Blank better
-
-There are a few ways to get involved, submit a Pull Request, or submit a comment on the website - [cheapweb.com](http://cheapweb.com)
-
 ## Features
 
 ### HTML5

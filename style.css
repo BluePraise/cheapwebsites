@@ -1174,30 +1174,6 @@ input:focus {
     STRUCTURE
 \*------------------------------------*/
 
-/* header */
-.header {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  padding: 10px 0;
-  z-index: 500;
-  height: 70px;
-  overflow: visible;
-  background-color: #fff;
-  color: rgba(40, 40, 40, 1);
-  border-bottom: 1px solid #4848f0;
-}
-.header__logo {
-  margin: 0 40px 0 0;
-  padding: 0;
-  line-height: 50px;
-  color: #282828;
-  text-decoration: none;
-  white-space: nowrap;
-  font-weight: 300;
-  font-size: 26px;
-}
 
 /*------------------------------------*\
     RESPONSIVE
