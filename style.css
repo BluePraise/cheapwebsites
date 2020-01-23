@@ -45,6 +45,41 @@ body {
   }
 }
 
+@font-face {
+    font-family: 'kollektifregular';
+    src: url('fonts/kollektif-webfont.woff2') format('woff2'),
+         url('fonts/kollektif-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kollektifbold';
+    src: url('fonts/kollektif-bold-webfont.woff2') format('woff2'),
+         url('fonts/kollektif-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'kollektifbold_italic';
+    src: url('fonts/kollektif-bolditalic-webfont.woff2') format('woff2'),
+         url('fonts/kollektif-bolditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'kollektifitalic';
+    src: url('fonts/kollektif-italic-webfont.woff2') format('woff2'),
+         url('fonts/kollektif-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 
 .btn {
   display: inline-flex;
@@ -1141,8 +1176,7 @@ input:focus {
 
 /* header */
 .header {
-  display: flex;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   right: 0;
@@ -1151,10 +1185,8 @@ input:focus {
   height: 70px;
   overflow: visible;
   background-color: #fff;
-  border-color: rgba(0, 0, 0, 0.1);
   color: rgba(40, 40, 40, 1);
-  border-bottom: 1px solid #bbb;
-  position: fixed;
+  border-bottom: 1px solid #4848f0;
 }
 .header__logo {
   margin: 0 40px 0 0;

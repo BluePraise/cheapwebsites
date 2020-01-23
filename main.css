@@ -1,17 +1,25 @@
 .header {
-  position: fixed;
-  background-color: #fff;
-  left: 0;
-  top: 0;
-  right: 0;
-  padding: 10px 0;
-  z-index: 500;
-  height: 50px;
-  overflow: visible;
-  border-bottom: 1px solid #bbb;
+    position: fixed;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 500;
+    overflow: visible;
+    border-bottom: 1px solid #4848f0;
 }
 
 .header .wr {
     display: flex;
     justify-content: space-between;
+}
+
+.header__logo {
+    font-family: 'kollektifbold_italic';
+    color: #4848f0;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    white-space: nowrap;
 }

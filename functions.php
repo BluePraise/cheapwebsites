@@ -121,8 +121,8 @@ function cheapweb_styles()
     wp_register_style('cheapweb', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('cheapweb'); // Enqueue it!
 
-    wp_register_style('page-css', get_template_directory_uri() . '/css/page.css', array(), '1.0', 'all');
-    wp_enqueue_style('page-css'); // Enqueue it!
+    wp_register_style('main-css', get_template_directory_uri() . '/main.css', array(), '1.0', 'all');
+    wp_enqueue_style('main-css'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation

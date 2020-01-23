@@ -24,15 +24,7 @@
 .header__nav .btn:first-child {
   margin-left: 0;
 }
-.header__logo {
-  margin: 0 40px 0 0;
-  padding: 0;
-  font-size: 22pt;
-  line-height: 50px;
-  color: inherit !important;
-  text-decoration: none !important;
-  white-space: nowrap;
-}
+
 .header__logoImg {
   display: flex;
   max-height: 100%;
