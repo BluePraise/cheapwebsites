@@ -1,0 +1,17 @@
+.header {
+  position: fixed;
+  background-color: #fff;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 10px 0;
+  z-index: 500;
+  height: 50px;
+  overflow: visible;
+  border-bottom: 1px solid #bbb;
+}
+
+.header .wr {
+    display: flex;
+    justify-content: space-between;
+}
