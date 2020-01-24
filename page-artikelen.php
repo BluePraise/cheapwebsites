@@ -8,7 +8,7 @@
 
 <link href="<?php echo get_stylesheet_directory_uri() ?>/css/page.css" rel="stylesheet" />
 
-<main class="page--content">
+<main class="page--content" role="main">
     <div class="page--header">
         <h1 class="page--title">Artikel Overzicht</h1>
         <div class="page--intro">
@@ -23,10 +23,10 @@
             <?php
             // TO SHOW THE PAGE CONTENTS
             while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
-                <div class="entry-content-page">
+                <li class="entry-content-page">
                     <?php the_title(); ?> <!-- Page Content -->
                     <?php the_content(); ?> <!-- Page Content -->
-                </div><!-- .entry-content-page -->
+                </li><!-- .entry-content-page -->
 
             <?php
             endwhile; //resetting the page loop
