@@ -23,13 +23,10 @@
             <?php
             // TO SHOW THE PAGE CONTENTS
             while ( have_posts() ) : the_post(); ?> <!--Because the_content() works only inside a WP Loop -->
-                <li class="article">
-                    <h2 class="article--title"><?php the_title(); ?></h2> <!-- Page Content -->
-                    <span class="entry-date"><?php echo get_the_date(); ?></span>
-                    <div class="article--content">
-                        <?php the_excerpt(); ?> <!-- Page Content -->
-                    </div>
-                </li><!-- .entry-content-page -->
+                <div class="entry-content-page">
+                    <?php the_title(); ?> <!-- Page Content -->
+                    <?php the_content(); ?> <!-- Page Content -->
+                </div><!-- .entry-content-page -->
 
             <?php
             endwhile; //resetting the page loop

@@ -154,6 +154,13 @@ function remove_category_rel_from_category_list($thelist)
     return str_replace('rel="category tag"', 'rel="tag"', $thelist);
 }
 
+// Replaces the excerpt "Read More" text by a link
+function new_excerpt_more($more) {
+       global $post;
+    return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read the full article...</a>';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 // Add page slug to body class, love this - Credit: Starkers Wordpress Theme
 function add_slug_to_body_class($classes)
 {
@@ -254,7 +261,7 @@ function html5wp_excerpt($length_callback = '', $more_callback = '')
 function html5_blank_view_article($more)
 {
     global $post;
-    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('View Article', 'cheapweb') . '</a>';
+    return '... <a class="view-article" href="' . get_permalink($post->ID) . '">' . __('Lees Meer', 'cheapweb') . '</a>';
 }
 
 // Remove Admin bar

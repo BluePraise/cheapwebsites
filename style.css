@@ -26,7 +26,6 @@
 
 body {
   font-family: "Roboto", Arial, serif;
-  font-size: 14px;
   font-weight: 400;
   --title-scale: 1;
   line-height: 1.5;
@@ -111,25 +110,20 @@ svg, img {
 
 
 .btn {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  margin: 0;
-  padding: 0 0.7em;
-  height: 2.4em;
-  line-height: 2.4em;
-  border: none;
-  outline: none;
-  border-radius: 3px;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-    sans-serif;
-  font-weight: 500;
-  font-size: 1.05em;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  background: transparent;
+    padding: 10px;
+    text-align: center;
+    font-family: 'kollektifbold';
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+    color: #fff;
+    border: 1px solid #4848f0;
+    background: #4848f0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
 }
+
+
 .btn--large {
   font-size: 1.2em;
 }
@@ -507,7 +501,7 @@ svg, img {
   font-weight: 500;
   max-width: 500px;
   margin: 0;
-  font-size: 1.5em;
+  font-size: 21px;
 }
 
 .hero__ctaInfo {
