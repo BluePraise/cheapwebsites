@@ -19,10 +19,10 @@
         </div>
     </div>
 
-    <div class="search-bar">
+    <!-- <div class="search-bar">
         <h3>Doorzoek het overzicht:</h3>
-        <?php echo get_search_form( $echo = true ) ?>
-    </div>
+        <?php //echo get_search_form( $echo = true ) ?>
+    </div> -->
 
     <section class="article--overview">
         <ul class="article--list">

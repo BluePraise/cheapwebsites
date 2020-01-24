@@ -41,4 +41,12 @@
 
     // window.addEventListener("resize", determineVisibility);
     // determineVisibility();
+
+    feather.replace()
 })();
+
+// feather
+
+// $( document ).ready(function() {
+
+// });

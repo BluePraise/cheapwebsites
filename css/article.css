@@ -87,9 +87,42 @@ input[type="search"]::focus:-moz-placeholder { /* Firefox 18- */
 
 
 article.post {
-    /* margin-top: 50px; */
+    position: relative;
+     margin-top: 50px;
 }
 
 .post--comments {
     display: block;
+}
+
+.single-post .article--title {
+    position: absolute;
+    top: 120px;
+    background-color: #ffffff80;
+    padding: 20px;
+    font-size: 60px;
+    width: 60%;
+    line-height: 58px;
+    border-radius: 4px;
+}
+
+.post-content .article--content {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    margin-left: 40px;
+}
+
+.single--categories a {
+    font-family: 'kollektifbold';
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: #4848f0;
+}
+
+.post--comments .icon-thing svg {
+    width: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+    line-height: 16px;
 }

@@ -23,11 +23,14 @@
 	<meta name="description"
 		content="<?php bloginfo('description'); ?>">
 
-
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet" />
+	<script src="https://unpkg.com/feather-icons"></script>
 
 	<?php wp_head(); ?>
 	<script>
+
+
+
 		// conditionizr.com
 		// configure environment tests
 		conditionizr.config({
