@@ -31,34 +31,7 @@ ul.article--list {
     padding: 0;
     list-style: none;
     display: flex;
-    /* flex-direction: column; */
     flex-wrap: wrap;
 }
 
-.article {
-    width: 32%;
-    margin-right: 1%;
-}
 
-.article--title {
-    color: #4848f0;
-    padding: 20px;
-    margin: 0;
-}
-
-.article--content p {
-    font-size: 18px;
-}
-
-.entry-date {
-    display: block;
-    margin: 10px 0;
-    font-size: 14px;
-    color: #6f6f6f;
-    font-weight: 900;
-}
-
-.view-article {
-    display: block;
-    margin-top: 20px;
-}

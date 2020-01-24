@@ -1,8 +1,9 @@
 <?php get_header(); ?>
 
 	<main role="main">
-	<!-- section -->
-	<section>
+
+
+	<link href="<?php echo get_stylesheet_directory_uri() ?>/css/article.css" rel="stylesheet" />
 
 	<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
@@ -18,15 +19,14 @@
 			<!-- /post thumbnail -->
 
 			<!-- post title -->
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+			<h1 class="article--title"><?php the_title(); ?>
 			</h1>
 			<!-- /post title -->
 
 			<!-- post details -->
-			<span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
+			<span class="entry-date"><?php the_time('F j, Y'); ?></span>
 			<span class="author"><?php _e( 'Published by', 'cheapweb' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'cheapweb' ), __( '1 Comment', 'cheapweb' ), __( '% Comments', 'cheapweb' )); ?></span>
+			<span class="post--comments"><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'cheapweb' ), __( '1 Comment', 'cheapweb' ), __( '% Comments', 'cheapweb' )); ?></span>
 			<!-- /post details -->
 
 			<?php the_content(); // Dynamic Content ?>
@@ -58,8 +58,6 @@
 
 	<?php endif; ?>
 
-	</section>
-	<!-- /section -->
 	</main>
 
 <?php get_sidebar(); ?>
