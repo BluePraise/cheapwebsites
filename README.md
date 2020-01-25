@@ -12,4 +12,6 @@ Een WordPress Template voor Cheap-Websites
 ### Resources
 
 -   Illustraties van [undraw.co](https://undraw.co/)
+-   Iconen van [Feather](https://feathericons.com/)
+-   [Kollektif Font](https://www.dafontfree.io/kollektif-typeface/)
 

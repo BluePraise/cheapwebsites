@@ -31,13 +31,21 @@
     text-decoration: none;
 }
 
+@media only screen and (max-width: 700px) {
+  .header__logo {
+    font-size: 18px;
+  }
+}
+
+
 .subheader {
     font-family: 'kollektifbold';
     color: #fff;
     letter-spacing: 1.4px;
 }
 
-.header--fixed + main {
+.header--fixed + main,
+.header--fixed + section {
     padding-top: 104px;
     max-width: 1200px;
     margin: 0 auto;
@@ -47,7 +55,27 @@ main section {
     padding-top: 50px;
 }
 
+/*************************
+*
+* Main Menu
+*
+*************************/
+.header__nav .menu ul {
+    list-style: none;
+    padding-left: 0;
+}
 
+.header__nav .menu ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.header__nav .menu ul li a {
+    font-family: 'kollektifbold';
+    color: #fff;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+}
 
 /*************************
 *
@@ -62,7 +90,47 @@ main section {
 }
 
 .section--hero .ft {
-  min-height: 700px;
+    min-height: 700px;
+}
+
+
+.hero__title {
+  font-family: "Roboto", Arial, serif; /* overwrite style.css */
+  font-weight: 300;
+  font-size: 3.5em;
+  line-height: 1.2;
+  margin: 0 0 17px;
+}
+.hero__subtitle {
+  font-weight: 500;
+  max-width: 500px;
+  margin: 0;
+  font-size: 21px;
+}
+
+.hero__ctaInfo {
+  display: inline;
+  margin-top: 10px;
+  max-width: 230px;
+  font-size: 0.9em;
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 750px) {
+  .hero__subtitle {
+    margin: 0 auto;
+  }
+  .hero__ctaInfo {
+    margin: 10px auto;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .hero__title {
+    font-size: 28pt;
+  }
+  .hero__subtitle {
+    font-size: 14pt;
+  }
 }
 
 /*************************

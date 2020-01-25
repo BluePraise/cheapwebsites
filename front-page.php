@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
 
-<div class="hero section--hero">
+<section class="hero section--hero">
 	<div class="ft">
 		<div class="ft__half">
 			<h1 class="hero__title color-1 weight-title-h font-title">De mogelijkheden zijn eindeloos, maar jouw
@@ -40,7 +40,7 @@
 			</div>
 	</div>
 
-</div> <!-- End of .Hero -->
+</section> <!-- End of .Hero -->
 
 <div id="press" class="section section--logos section--center dark">
 	<div class="wr">

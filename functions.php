@@ -63,28 +63,28 @@ if (function_exists('add_theme_support'))
 \*------------------------------------*/
 
 // HTML5 Blank navigation
-function cheapweb_nav()
+function cheapweb_main_nav()
 {
 	wp_nav_menu(
-	array(
-		'theme_location'  => 'header-menu',
-		'menu'            => '',
-		'container'       => 'div',
-		'container_class' => 'menu-{menu slug}-container',
-		'container_id'    => '',
-		'menu_class'      => 'menu',
-		'menu_id'         => '',
-		'echo'            => true,
-		'fallback_cb'     => 'wp_page_menu',
-		'before'          => '',
-		'after'           => '',
-		'link_before'     => '',
-		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
-		'depth'           => 0,
-		'walker'          => ''
-		)
-	);
+        array(
+            'theme_location'  => 'Header Menu',
+            'menu'            => 'header-nav',
+            'container'       => '',
+            'container_class' => '',
+            'container_id'    => '',
+            'menu_class'      => '',
+            'menu_id'         => '',
+            'echo'            => true,
+            'fallback_cb'     => '',
+            'before'          => '',
+            'after'           => '',
+            'link_before'     => '',
+            'link_after'      => '',
+            'items_wrap'      => '<ul class="menu-list">%3$s</ul>',
+            'depth'           => 0,
+            'walker'          => ''
+            )
+        );
 }
 
 // Load HTML5 Blank scripts (header.php)
@@ -129,7 +129,7 @@ function cheapweb_styles()
 function register_html5_menu()
 {
     register_nav_menus(array( // Using array to specify more menus if needed
-        'header-menu' => __('Header Menu', 'cheapweb'), // Main Navigation
+        'header-nav' => __('Header Menu', 'cheapweb'), // Main Navigation
         'sidebar-menu' => __('Sidebar Menu', 'cheapweb'), // Sidebar Navigation
         'extra-menu' => __('Extra Menu', 'cheapweb') // Extra Navigation if needed (duplicate as many as you need!)
     ));
@@ -355,7 +355,7 @@ add_action('wp_print_scripts', 'cheapweb_conditional_scripts'); // Add Condition
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'cheapweb_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+// add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 

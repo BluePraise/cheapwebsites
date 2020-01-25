@@ -53,8 +53,14 @@
 					<a href="<?php echo home_url(); ?>" class="header__logo">Cheap Websites</a>
 					<div class="subheader">WEBSITES VOOR STARTERS</div>
 				</div>
-				<nav id="headerNav" class="header__nav">
-					<div class="headerNav__links"></div>
+				<nav class="header__nav">
+					<?php wp_nav_menu(
+				        array(
+				            'theme_location'  => 'Header Menu',
+				            'menu'            => 'header-nav'
+				            )
+				        );
+				       ?>
 					<div class="header__navCtas"></div>
 				</nav>
 			</div>

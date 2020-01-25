@@ -2,17 +2,18 @@
   Theme Name: Cheap Websites
   Theme URI: http://cheapwebsites.nl.
   Description: Cheap Websites NL
-  Version: 1.4.3
+  Version: 1.1
   Author: Magalie Chetrit
   Author URI: https://magalielinda.me
   Tags: css3, html5
 
 */
 
-/*------------------------------------*\
-    MAIN
-\*------------------------------------*/
-
+/*************************
+*
+* BASE ELEMENTS
+*
+*************************/
 /* global box-sizing */
 *,
 *:after,
@@ -44,6 +45,14 @@ body {
   }
 }
 
+a {
+    color: #4848f0;
+}
+
+svg, img {
+  max-width: 100%;
+  height: auto;
+}
 
 /*************************
 *
@@ -84,7 +93,6 @@ body {
     font-weight: normal;
     font-style: normal;
 }
-
 h1 {
     font-family: 'kollektifbold_italic';
 }
@@ -93,9 +101,6 @@ h2 {
     margin: 0;
 }
 
-a {
-    color: #4848f0;
-}
 
 /*************************
 *
@@ -121,10 +126,18 @@ a {
   align-self: center;
 }
 
-svg, img {
-  max-width: 100%;
-  height: auto;
+.wr {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
 }
+@media only screen and (max-width: 700px) {
+  .wr {
+    padding: 0 15px;
+  }
+}
+
 
 
 .btn {
@@ -486,12 +499,6 @@ svg, img {
   }
 }
 
-
-.header__nav {
-  display: flex;
-}
-
-
 .header__navCtas {
   display: flex;
   margin-left: 20px;
@@ -502,50 +509,8 @@ svg, img {
   display: flex;
 }
 
-@media only screen and (max-width: 700px) {
-  .header__logo {
-    font-size: 18pt;
-  }
-}
 
 
-.hero__title {
-  font-weight: 700;
-  font-size: 3.5em;
-  line-height: 1.2;
-  margin: 0 0 17px;
-}
-.hero__subtitle {
-  font-weight: 500;
-  max-width: 500px;
-  margin: 0;
-  font-size: 21px;
-}
-
-.hero__ctaInfo {
-  display: inline;
-  margin-top: 10px;
-  max-width: 230px;
-  font-size: 0.9em;
-  opacity: 0.7;
-}
-
-@media only screen and (max-width: 750px) {
-  .hero__subtitle {
-    margin: 0 auto;
-  }
-  .hero__ctaInfo {
-    margin: 10px auto;
-  }
-}
-@media only screen and (max-width: 700px) {
-  .hero__title {
-    font-size: 28pt;
-  }
-  .hero__subtitle {
-    font-size: 14pt;
-  }
-}
 .section--pricing {
   background-color: rgba(255, 255, 255, 1);
   padding-bottom: 60px;
@@ -1259,17 +1224,6 @@ a img.aligncenter {
   }
 }
 
-.wr {
-  position: relative;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-@media only screen and (max-width: 700px) {
-  .wr {
-    padding: 0 15px;
-  }
-}
 /*.section:not(.dark),
 .section:not(.dark) .color-2,
 .theme--light,
