@@ -1,6 +1,5 @@
 <?php
 /* TEMPLATE NAME: Article Overview */
-
 ?>
 
 

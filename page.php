@@ -1,11 +1,11 @@
 <?php get_header(); ?>
-<div class="ft">
-	<main role="main">
-		<!-- section -->
-		<section>
+<link href="<?php echo get_stylesheet_directory_uri() ?>/css/page.css" rel="stylesheet" />
 
-			<h1><?php the_title(); ?></h1>
-
+<div class="ft ft--sidebar">
+	<main class="page--content" role="main">
+		<div class="page--header">
+			<h1 class="page--title"><?php the_title(); ?></h1>
+		</div>
 		<?php if (have_posts()): while (have_posts()) : the_post(); ?>
 
 			<!-- article -->
@@ -36,8 +36,6 @@
 
 		<?php endif; ?>
 
-		</section>
-		<!-- /section -->
 	</main>
 
 	<?php get_sidebar(); ?>

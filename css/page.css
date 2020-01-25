@@ -5,11 +5,14 @@
 *************************/
 
 
-
 .page--content {
     padding-top: 104px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.ft--sidebar .page--content {
+    max-width: 800px;
 }
 
 .page--header {
@@ -27,11 +30,7 @@
     font-size: 21px;
 }
 
-ul.article--list {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+/* alleen bij default templates */
+.page-template-default article p {
+ font-size: 21px;
 }
-
-

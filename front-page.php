@@ -5,7 +5,7 @@
 ?>
 
 <?php get_header(); ?>
-
+<link href="<?php echo get_stylesheet_directory_uri() ?>/css/frontpage.css" rel="stylesheet" />
 <section class="hero section--hero">
 	<div class="ft">
 		<div class="ft__half">

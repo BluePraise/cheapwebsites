@@ -4,6 +4,12 @@
 *
 *************************/
 
+ul.article--list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .article {
     width: 32%;
@@ -153,18 +159,5 @@ article.post {
     font-size: 16px;
     line-height: 22px;
 }
-
-.lowlight {
-    font-size: 14px !important;
-    font-family: 'kollektifbold';
-    text-transform: uppercase;
-    letter-spacing: 1.4px;
-    background-color: #4848f0;
-    color: #fff;
-    padding-left: 20px;
-    border-radius: 4px;
-}
-
-
 
 

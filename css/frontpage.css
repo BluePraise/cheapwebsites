@@ -1,0 +1,163 @@
+/*************************
+*
+* Frontpage
+*
+*************************/
+
+
+/*************************
+*
+* HERO
+*
+*************************/
+
+.section--hero {
+    background-position: 50%;
+    background-size: cover;
+    display: flex;
+}
+
+.section--hero .ft {
+    min-height: 700px;
+}
+
+
+.hero__title {
+    font-family: "Roboto", Arial, serif;
+    /* overwrite style.css */
+    font-weight: 300;
+    font-size: 3.5em;
+    line-height: 1.2;
+    margin: 0 0 17px;
+}
+
+.hero__subtitle {
+    font-weight: 500;
+    max-width: 500px;
+    margin: 0;
+    font-size: 21px;
+}
+
+.hero__ctaInfo {
+    display: inline;
+    margin-top: 10px;
+    max-width: 230px;
+    font-size: 0.9em;
+    opacity: 0.7;
+}
+
+@media only screen and (max-width: 750px) {
+    .hero__subtitle {
+        margin: 0 auto;
+    }
+
+    .hero__ctaInfo {
+        margin: 10px auto;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .hero__title {
+        font-size: 28pt;
+    }
+
+    .hero__subtitle {
+        font-size: 14pt;
+    }
+}
+
+/*************************
+*
+* FEATURES
+*
+*************************/
+
+.section--features {
+    background-color: rgba(72, 72, 240, 1);
+    padding-bottom: 60px;
+    padding-top: 60px;
+    min-height: 0px;
+    color: #fff;
+}
+
+.section--feature {
+    background-color: rgba(255, 255, 255, 1);
+    min-height: 500px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.feature {
+    margin: 0 25px;
+    box-sizing: border-box;
+    width: 33.33%;
+}
+
+.feature:first-child {
+    margin-left: 0;
+}
+
+.feature:last-child {
+    margin-right: 0;
+}
+
+.feature__title {
+    margin: 0 0 8px;
+    font-weight: 400;
+    font-size: 1.3em;
+}
+
+.feature__description {
+    overflow: auto;
+    margin: 3px 0 0;
+    font-size: 1.1em;
+    line-height: 1.6em;
+}
+
+.feature__description p {
+    margin: 0;
+}
+
+@media only screen and (max-width: 760px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+        margin: 0 0 50px;
+    }
+
+    .feature:last-child {
+        margin-bottom: 0;
+    }
+
+    .features:not(.features--center) .feature .icon {
+        float: left;
+        margin-right: 30px;
+    }
+
+    .feature__title {
+        margin-bottom: 4px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .feature {
+        text-align: center;
+    }
+
+    .features .icon {
+        float: none !important;
+        margin: 0 auto 15px !important;
+    }
+
+    .features .iconWrapper .icon {
+        margin-bottom: 0 !important;
+    }
+}
