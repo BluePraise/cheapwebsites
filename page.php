@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div class="ft">
 	<main role="main">
 		<!-- section -->
 		<section>
@@ -40,6 +40,6 @@
 		<!-- /section -->
 	</main>
 
-<?php get_sidebar(); ?>
-
+	<?php get_sidebar(); ?>
+</div>
 <?php get_footer(); ?>

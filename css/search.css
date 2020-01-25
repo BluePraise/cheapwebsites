@@ -20,7 +20,49 @@
     border-radius: 4px;
 }
 
+
+.search-bar h3,
+.search-bar form.search {
+    display: inline-block;
+}
+.search-bar h3 {
+    margin-right: 40px;
+}
+
+.search-input {
+    padding: 10px;
+    border-radius: 4px;
+    width: 180px;
+    margin-right: 10px;
+    border: 4px solid #4848f0;
+}
+
 .search-results .view-article.btn {
     display: block;
     margin-top: 20px;
+}
+
+input[type="search"].search-input:focus {
+    background-color: #4848f0;
+    border: 4px solid #4848f0;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+input[type="search"].search-input:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+
+}
+input[type="search"].search-input:focus::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+
+}
+input[type="search"]::focus:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+
+}
+input[type="search"]::focus:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+    font-weight: 400;
 }
