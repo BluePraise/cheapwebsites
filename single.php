@@ -28,20 +28,20 @@
 
 			<!-- post details -->
 			<span class="entry-date"><?php the_time('F j, Y'); ?></span>
-			<span class="author"><?php _e( 'Published by', 'cheapweb' ); ?> <?php the_author_posts_link(); ?></span>
+			<div class="single__org--cw">
+				<?php the_tags( __( '<span class="label--cw">Tags: </span>', 'cheapweb' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
+
+				<?php _e( '<span class="label--cw">Geplaatst in: </span>', 'cheapweb' ); the_category(' / '); // Separated by commas ?>
+			</div>
 			<span class="post--comments"><span class="icon-thing"><i data-feather="message-square"></i></span><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Wil je reageren?', 'cheapweb' ), __( '1 Comment', 'cheapweb' ), __( '% Comments', 'cheapweb' )); ?></span>
 			<!-- /post details -->
 			<div class="article--content">
 				<?php the_content(); // Dynamic Content ?>
+				<?php comments_template(); ?>
 			</div>
-			<?php the_tags( __( 'Tags: ', 'cheapweb' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
-
-			<div class="single--categories"><?php _e( 'Geplaatst in: ', 'cheapweb' ); the_category(' / '); // Separated by commas ?></div>
 
 
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
-
-			<?php comments_template(); ?>
 
 		</article>
 		<!-- /article -->

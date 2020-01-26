@@ -2,6 +2,7 @@
   Theme Name: Cheap Websites
   Theme URI: http://cheapwebsites.nl.
   Description: Cheap Websites NL
+  Template: twentyseventeen
   Version: 1.1
   Author: Magalie Chetrit
   Author URI: https://magalielinda.me
@@ -99,8 +100,16 @@ h1 {
 
 h2 {
     margin: 0;
+    color: #4848f0;
+    padding: 20px 0;
+
 }
 
+h3 {
+    font-size: 34px;
+    margin: 0;
+    font-weight: 300;
+}
 
 /*************************
 *
@@ -131,6 +140,12 @@ h2 {
   align-self: center;
 }
 
+@media only screen and (max-width: 750px) {
+  .ft__half {
+    padding: 50px;
+  }
+}
+
 .wr {
   position: relative;
   width: 100%;
@@ -142,6 +157,58 @@ h2 {
     padding: 0 15px;
   }
 }
+
+
+/*************************
+*
+* FORM CONTROL en BUTTONS
+*
+*************************/
+
+/* formulier staat op about pagina */
+
+.wpcf7-form-control {
+    padding: 10px;
+    border-radius: 4px;
+    margin-right: 10px;
+    border: 4px solid #4848f0;
+}
+
+.wpcf7-form label {
+    font-family: 'kollektifbold_italic';
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+input.wpcf7-form-control:focus {
+    background-color: #4848f0;
+    border: 4px solid #4848f0;
+    color: #fff;
+    font-weight: 600;
+}
+
+
+input.wpcf7-form-control:focus::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: #fff;
+    font-weight: 400;
+
+}
+input.wpcf7-form-control:focus::-moz-placeholder { /* Firefox 19+ */
+    color: #fff;
+    font-weight: 400;
+
+}
+input.wpcf7-form-control::focus:-ms-input-placeholder { /* IE 10+ */
+    color: #fff;
+    font-weight: 400;
+
+}
+input.wpcf7-form-control::focus:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+    font-weight: 400;
+}
+
+
 
 .btn {
     text-align: center;

@@ -15,6 +15,7 @@
     background-position: 50%;
     background-size: cover;
     display: flex;
+    margin-top: 80px;
 }
 
 .section--hero .ft {
@@ -47,6 +48,10 @@
 }
 
 @media only screen and (max-width: 750px) {
+    .section--hero {
+        padding-top: 160px;
+    }
+
     .hero__subtitle {
         margin: 0 auto;
     }
@@ -54,16 +59,13 @@
     .hero__ctaInfo {
         margin: 10px auto;
     }
+    .hero__title {
+        font-size: 30pt;
+    }
 }
 
 @media only screen and (max-width: 700px) {
-    .hero__title {
-        font-size: 28pt;
-    }
 
-    .hero__subtitle {
-        font-size: 14pt;
-    }
 }
 
 /*************************

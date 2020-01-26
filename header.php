@@ -18,12 +18,11 @@
 		href="<?php echo get_template_directory_uri(); ?>/img/icons/touch.png"
 		rel="apple-touch-icon-precomposed">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet" />
+    <script src="https://unpkg.com/feather-icons"></script>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description"
 		content="<?php bloginfo('description'); ?>">
-
-
 
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -89,8 +88,8 @@
 				<nav class="header__nav">
                     <?php wp_nav_menu(
                         array(
-                            'theme_location'  => 'Header Menu',
-                            'menu'            => 'header-nav'
+                            'theme_location'  => 'Main Menu',
+                            'menu'            => 'main-nav'
                             )
                         );
                        ?>

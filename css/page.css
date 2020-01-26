@@ -32,5 +32,25 @@
 
 /* alleen bij default templates */
 .page-template-default article p {
- font-size: 21px;
+    font-size: 21px;
+}
+
+@media only screen and (max-width: 750px) {
+    .page--header {
+        margin: 50px 20px;
+    }
+    .page--intro {
+        width: 100%;
+    }
+    .page-template-default .ft {
+        padding-top: 120px;
+    }
+
+    .ft--sidebar .page--content {
+        padding: 20px;
+    }
+    .ft--sidebar aside {
+        display: none;
+    }
+
 }

@@ -31,12 +31,6 @@
     text-decoration: none;
 }
 
-@media only screen and (max-width: 700px) {
-  .header__logo {
-    font-size: 18px;
-  }
-}
-
 .subheader {
     font-family: 'kollektifbold';
     color: #fff;
@@ -47,6 +41,15 @@
      padding-top: 104px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 750px) {
+  .header__logo {
+        font-size: 18px;
+  }
+  .subheader {
+        font-size: 10px;
+  }
 }
 
 /*************************
@@ -64,6 +67,12 @@
   margin-left: 30px;
 }
 
+/* TEMP FIX - KAN HET NIET VERKLAREN WAAROM DIE NIET WEGGAAN */
+.header__nav li.page-item-2,
+.header__nav li.page-item-76 {
+    display: none !important;
+}
+
 .header__nav .menu ul li a {
     font-family: 'kollektifbold';
     color: #fff;
@@ -78,14 +87,15 @@
 *************************/
 
 .lowlight {
-    font-size: 14px !important;
+    font-size: 10px !important;
     font-family: 'kollektifbold';
     text-transform: uppercase;
     letter-spacing: 1.4px;
     background-color: #4848f0;
     color: #fff;
-    padding-left: 20px;
     border-radius: 4px;
+    width: 200px;
+    text-align: center;
 }
 
 /* Dit werkt als een arcering */
@@ -96,6 +106,4 @@ p.highlight {
     border: 4px solid #4848f0;
     padding: 20px;
     color: #4848f0;
-    background-color: #ffff9b;
-    background-color: #ffff9b;
 }

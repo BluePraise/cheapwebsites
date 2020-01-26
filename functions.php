@@ -17,7 +17,7 @@
 
 if (!isset($content_width))
 {
-    $content_width = 900;
+    $content_width = 1200;
 }
 
 if (function_exists('add_theme_support'))
@@ -131,7 +131,8 @@ function register_html5_menu()
     register_nav_menus(array( // Using array to specify more menus if needed
         'header-nav' => __('Header Menu', 'cheapweb'), // Main Navigation
         'sidebar-menu' => __('Sidebar Menu', 'cheapweb'), // Sidebar Navigation
-        'extra-menu' => __('Extra Menu', 'cheapweb') // Extra Navigation if needed (duplicate as many as you need!)
+        'extra-menu' => __('Extra Menu', 'cheapweb'), // Extra Navigation if needed (duplicate as many as you need!)
+        'main-menu' => __('Main Menu', 'cheapweb') // Extra Navigation if needed (duplicate as many as you need!)
     ));
 }
 
@@ -386,7 +387,7 @@ add_filter('the_category', 'remove_category_rel_from_category_list'); // Remove 
 add_filter('the_excerpt', 'shortcode_unautop'); // Remove auto <p> tags in Excerpt (Manual Excerpts only)
 add_filter('the_excerpt', 'do_shortcode'); // Allows Shortcodes to be executed in Excerpt (Manual Excerpts only)
 add_filter('excerpt_more', 'html5_blank_view_article'); // Add 'View Article' button instead of [...] for Excerpts
-add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
+// add_filter('show_admin_bar', 'remove_admin_bar'); // Remove Admin bar
 add_filter('style_loader_tag', 'html5_style_remove'); // Remove 'text/css' from enqueued stylesheet
 add_filter('post_thumbnail_html', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to thumbnails
 add_filter('image_send_to_editor', 'remove_thumbnail_dimensions', 10); // Remove width and height dynamic attributes to post images
