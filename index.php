@@ -38,7 +38,12 @@
                             <figure><img src="<?php echo get_stylesheet_directory_uri() ?>/img/defaultpostthumbnail.jpg" alt=""></figure>
                         <?php } ?>
 
-                    <span class="entry-date"><?php echo get_the_date(); ?></span>
+                    <div class="article--details">
+                        <span class="entry-date"><?php echo get_the_date('j F Y'); ?></span>
+                        <div class="single__org--cw">
+                        <?php _e( '', 'cheapweb' ); the_category(' / '); // Separated by commas ?></div>
+                        <span class="post--comments"><span class="icon-thing"><i data-feather="message-square"></i></span><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Wil je reageren?', 'cheapweb' ), __( '1 reactie', 'cheapweb' ), __( '% Comments', 'cheapweb' )); ?></span>
+                    </div>
                     <div class="article--content">
                         <?php the_excerpt(); ?> <!-- Page Content -->
                     </div>

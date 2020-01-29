@@ -27,11 +27,14 @@
 			<!-- /post title -->
 
 			<!-- post details -->
-			<span class="entry-date"><?php the_time('F j, Y'); ?></span>
-			<div class="single__org--cw">
+			<div class="article--details">
+				<span class="entry-date"><?php the_date('j F Y'); ?></span>
+				<div class="single__org--cw">
 				<?php _e( '', 'cheapweb' ); the_category(' / '); // Separated by commas ?>
 			</div>
-			<span class="post--comments"><span class="icon-thing"><i data-feather="message-square"></i></span><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Wil je reageren?', 'cheapweb' ), __( '1 Comment', 'cheapweb' ), __( '% Comments', 'cheapweb' )); ?></span>
+			<span class="post--comments"><span class="icon-thing"><i data-feather="message-square"></i></span><?php if (comments_open( get_the_ID() ) ) comments_popup_link( __( 'Wil je reageren?', 'cheapweb' ), __( '1 reactie', 'cheapweb' ), __( '% Comments', 'cheapweb' )); ?></span>
+			</div>
+
 			<!-- /post details -->
 			<div class="article--content">
 				<?php the_content(); // Dynamic Content ?>

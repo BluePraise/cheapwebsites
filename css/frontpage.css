@@ -47,26 +47,23 @@
     opacity: 0.7;
 }
 
-@media only screen and (max-width: 750px) {
-    .section--hero {
-        padding-top: 160px;
-    }
 
-    .hero__subtitle {
-        margin: 0 auto;
-    }
+/*************************
+*
+* SECTIONS
+*
+*************************/
 
-    .hero__ctaInfo {
-        margin: 10px auto;
-    }
-    .hero__title {
-        font-size: 30pt;
-    }
+h2.section__title {
+    font-weight: 300;
+    color: #24292e;
+}
+.section--testimonials h2.section__title,
+.section--faq h2.section__title,
+.section--faq {
+    color: #fff;
 }
 
-@media only screen and (max-width: 700px) {
-
-}
 
 /*************************
 *
@@ -78,8 +75,11 @@
     background-color: rgba(72, 72, 240, 1);
     padding-bottom: 60px;
     padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
     min-height: 0px;
     color: #fff;
+
 }
 
 .section--feature {
@@ -125,9 +125,54 @@
     margin: 0;
 }
 
-@media only screen and (max-width: 760px) {
+
+@media only screen and (max-width: 450px) {
+    .feature {
+        text-align: center;
+    }
+
+    .feature .icon {
+        float: none !important;
+        margin: 0 auto 15px !important;
+    }
+
+    .features .iconWrapper .icon {
+        margin-bottom: 0 !important;
+    }
+}
+
+
+
+@media only screen and (max-width: 1230px) {
+    .section--hero .ft {
+        min-height: 0;
+    }
+
+    .section--hero {
+        padding: 40px 20px;
+    }
+
+    .hero__subtitle {
+        margin: 0 auto;
+    }
+
+    .hero__ctaInfo {
+        margin: 10px auto;
+    }
+    .hero__title {
+        font-size: 30pt;
+    }
+
+    .section--feature {
+        padding: 0 20px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) {
     .features {
         flex-direction: column;
+        padding: 40px 20px;
     }
 
     .feature {
@@ -146,20 +191,5 @@
 
     .feature__title {
         margin-bottom: 4px;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .feature {
-        text-align: center;
-    }
-
-    .features .icon {
-        float: none !important;
-        margin: 0 auto 15px !important;
-    }
-
-    .features .iconWrapper .icon {
-        margin-bottom: 0 !important;
     }
 }

@@ -27,15 +27,38 @@ ul.article--list {
     margin: 0;
 }
 
-.entry-date {
-    display: block;
-    margin: 10px 0;
-    font-size: 14px;
-    color: #ababab;
+.article--details {
     font-weight: 900;
     font-family: 'kollektifbold';
     text-transform: uppercase;
     letter-spacing: 1.4px;
+    font-size: 14px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1219px) {
+    .article--details {
+        padding: 20px;
+    }
+}
+
+/* deze klassenaam wordt ook gebruikt in de single page */
+.entry-date {
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    color: #ababab;
+
+}
+.single__org--cw {
+    display: inline-block;
+    margin: 0 20px;
+}
+.single__org--cw a {
+    font-family: 'kollektifbold';
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: #4848f0;
 }
 
 .view-article {
@@ -82,13 +105,23 @@ article.post {
     border-radius: 4px;
 }
 
+@media only screen and (max-width: 750px) {
+    .single-post .article--title {
+        top: 50px;
+        font-size: 38px;
+        line-height: 42px;
+        width: 75%;
+    }
+}
+
 .post-content .article--content {
     display: flex;
     flex-direction: column;
-    width: 840px;
+    max-width: 840px;
     background-color: #fff;
     margin-left: 40px;
     margin-bottom: 40px;
+    margin-top: 40px;
     padding: 50px;
     border-bottom: 4px solid #4848f0;
     border-radius: 3px;
@@ -97,18 +130,23 @@ article.post {
     transition: all 0.3s;
 }
 
+@media only screen and (max-width: 1219px) {
+    .post-content .article--content {
+        padding: 20px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
 .post-content .article--content p {
     font-size: 20px;
     line-height: 30px;
     margin-top: 0;
 }
 
-.single__org--cw a {
-    font-family: 'kollektifbold';
-    text-transform: uppercase;
-    letter-spacing: 1.4px;
-    color: #4848f0;
-}
+
+/* deze is inmiddels verwijderd, maar kan
+nog bruikbaar zijn als ander element in de website */
 .label--cw {
     color: #ababab;
     margin: 10px 5px 10px 0;

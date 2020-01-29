@@ -43,7 +43,7 @@
     margin: 0 auto;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 767px) {
   .header__logo {
         font-size: 18px;
   }
@@ -69,6 +69,7 @@
 
 /* TEMP FIX - KAN HET NIET VERKLAREN WAAROM DIE NIET WEGGAAN */
 .header__nav li.page-item-2,
+.header__nav li.page-item-10,
 .header__nav li.page-item-76 {
     display: none !important;
 }
@@ -79,6 +80,7 @@
     letter-spacing: 1.4px;
     text-transform: uppercase;
 }
+
 
 /*************************
 *

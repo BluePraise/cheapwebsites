@@ -2,7 +2,6 @@
   Theme Name: Cheap Websites
   Theme URI: http://cheapwebsites.nl.
   Description: Cheap Websites NL
-  Template: twentyseventeen
   Version: 1.1
   Author: Magalie Chetrit
   Author URI: https://magalielinda.me
@@ -43,6 +42,8 @@ body {
 @media only screen and (max-width: 750px) {
   body {
     --title-scale: 0.7;
+    width: 100%;
+    overflow-x: hidden;
   }
 }
 
@@ -138,6 +139,7 @@ h3 {
 .ft__half {
   width: 50%;
   align-self: center;
+  /* padding: 0 10px; */
 }
 
 @media only screen and (max-width: 750px) {
@@ -308,7 +310,7 @@ input.wpcf7-form-control::focus:-moz-placeholder { /* Firefox 18- */
   justify-content: center;
 }
 .section--noPadding {
-  padding: 0;
+  /* padding: 0; */
 }
 .section--email {
   overflow: visible;
@@ -516,8 +518,8 @@ input.wpcf7-form-control::focus:-moz-placeholder { /* Firefox 18- */
   overflow: hidden;
 }
 .pdxItem--browser {
-  width: 800px;
-  min-width: 500px;
+  /* width: 800px; */
+  /* min-width: 500px; */
 }
 .pdxItem--browser > .pdxContent {
   top: 5.7%;
@@ -546,9 +548,9 @@ input.wpcf7-form-control::focus:-moz-placeholder { /* Firefox 18- */
 }
 .pdxItem svg {
   display: block;
-  max-height: 100%;
-  max-width: 100%;
-  width: 100%;
+  /* max-height: 100%; */
+  /* max-width: 100%; */
+  /* width: 100%; */
   filter: drop-shadow(0 8px 16px #0005);
 }
 
@@ -560,7 +562,7 @@ input.wpcf7-form-control::focus:-moz-placeholder { /* Firefox 18- */
 
 @media only screen and (max-width: 500px) {
   .pdxItem {
-    min-width: 0;
+    /* min-width: 0; */
   }
 }
 
@@ -881,10 +883,12 @@ input.wpcf7-form-control::focus:-moz-placeholder { /* Firefox 18- */
   background-color: rgba(72, 72, 240, 1);
   padding-bottom: 60px;
   padding-top: 60px;
+  color: white;
 }
-.testimonials {
+ul.testimonials {
   display: flex;
   flex-direction: column;
+  list-style: none;
 }
 .testimonial {
   position: relative;
@@ -1005,10 +1009,6 @@ input.wpcf7-form-control::focus:-moz-placeholder { /* Firefox 18- */
   text-align: left;
 }
 
-.ft--left .ft__half,
-.ft--right .ft__half {
-  padding-bottom: calc(50px + var(--pdx-pb) * var(--pdx-pm) * 1px);
-}
 .ft--bottom .ft__half:first-child,
 .ft--center .ft__half:first-child,
 .ft--left .ft__half,
@@ -1017,7 +1017,7 @@ input.wpcf7-form-control::focus:-moz-placeholder { /* Firefox 18- */
 }
 
 .ft__half .pdxItem {
-  z-index: 3;
+  /* z-index: 3; */
 }
 
 .ftPoint {
@@ -1069,7 +1069,6 @@ input.wpcf7-form-control::focus:-moz-placeholder { /* Firefox 18- */
     flex-direction: column;
     min-height: 0;
     text-align: center;
-    --pdx-pm: 0.3;
   }
 
   .ft--twoBg .ft__half:not(.pdx),
